@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact – Monmarenov</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact – Monmarenov Déménagement</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contactez-nous</h1>
-    <p>Email : superside@outlook.fr</p>
-    <p>Téléphone : 06 06 98 84 17</p>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Monmarenov Déménagement</h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>Contactez-nous</h2>
+    <p>Vous avez un projet de déménagement ? Remplissez le formulaire ci-dessous ou contactez-nous directement :</p>
+
+    <form action="https://formspree.io/f/TON_CODE" method="POST">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Votre message :</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+
+    <p>Email : <a href="mailto:superside@outlook.fr">superside@outlook.fr</a><br>
+    Téléphone : 06 06 98 84 17</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Monmarenov Déménagement – <a href="mailto:superside@outlook.fr">superside@outlook.fr</a></p>
+    </div>
+  </footer>
+
 </body>
 </html>
-Création de services.html
+« Uniformisation header/footer sur contact.html »
