@@ -3,87 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MonMaRénov – Rénovation & Déménagement</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- BANNIÈRE FULL-WIDTH -->
-  <header class="banner">
-    <div class="banner-overlay">
-      <h1>MonMaRénov</h1>
-      <p>Professionnalisme • Bienveillance • Efficacité</p>
-    </div>
-    <div class="banner-images">
-      <img src="images/photo1.jpg" alt="Équipe en rénovation">
-      <img src="images/photo2.jpg" alt="Camion de déménagement">
-    </div>
-  </header>
-
-  <!-- SECTION ACCUEIL -->
-  <section id="accueil" class="section">
-    <div class="container">
-      <h2>Bienvenue chez MonMaRénov</h2>
-      <p>
-        Vous cherchez une entreprise de confiance pour vos travaux de rénovation ou de déménagement ?  
-        MonMaRénov vous accompagne avec sérieux, efficacité et bienveillance.  
-        Notre équipe à l’écoute met un point d’honneur à respecter vos biens et vos délais.
-      </p>
-      <p>
-        Grâce à notre savoir-faire et notre attention au détail, vous pouvez déménager ou rénover en toute sérénité.
-      </p>
-    </div>
-  </section>
-
-  <!-- SECTION SERVICES -->
-  <section id="services" class="section section-alt">
-    <div class="container">
-      <h2>Nos Services</h2>
-      <ul>
-        <li><strong>Rénovation intérieure & extérieure</strong> : murs, sols, peintures, cuisines, salles de bain… un travail soigné et durable.</li>
-        <li><strong>Déménagement professionnel</strong> : transport sécurisé, emballage et manutention avec soin, pour un service sans stress.</li>
-        <li><strong>Nettoyage après chantier</strong> : remise en état impeccable de vos locaux ou de votre logement.</li>
-        <li><strong>Accompagnement personnalisé</strong> : conseils, devis gratuit et suivi transparent à chaque étape.</li>
-      </ul>
-      <p class="tagline">
-        Chez MonMaRénov, nous mettons le cœur dans chaque mission.
-      </p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 MonMaRénov — <a href="mailto:contact@monmarenov.fr">contact@monmarenov.fr</a></p>
-    </div>
-  </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MonMaRénov – Accueil</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- BARRE DE NAVIGATION -->
+  <!-- NAVIGATION SIMPLE -->
   <header class="site-header">
     <nav class="main-nav container">
-      <a href="index.html">Accueil</a>
+      <a href="index.html" class="active">Accueil</a>
       <a href="services.html">Services</a>
+      <a href="about.html">À propos</a>
       <a href="contact.html">Contact</a>
-    <nav class="main-nav container">
-  <a href="index.html">Accueil</a>
-  <a href="services.html">Services</a>
-  <a href="about.html">À propos</a>
-  <a href="testimonials.html">Témoignages</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
-<nav class="main-nav container">
+    </nav>
   </header>
 
   <!-- BANNIÈRE FULL-WIDTH -->
@@ -94,7 +26,7 @@
     </div>
     <div class="banner-images">
       <img src="images/photo1.jpg" alt="Équipe en rénovation">
-      <img src="images/photo2.jpg" alt="Camion de déménagement">
+      <!-- Pour l'instant une seule image de fond suffit -->
     </div>
   </section>
 
@@ -102,31 +34,53 @@
   <section id="accueil" class="section container">
     <h2>Bienvenue chez MonMaRénov</h2>
     <p>
-      Vous cherchez une entreprise de confiance pour vos travaux de rénovation ou de déménagement ?
+      Vous cherchez une entreprise de confiance pour vos travaux de rénovation ou de déménagement ?  
       MonMaRénov vous accompagne avec sérieux, efficacité et bienveillance.  
       Notre équipe met un point d’honneur à respecter vos biens et vos délais.
+    </p>
+    <p>
+      Grâce à notre savoir-faire et notre attention au détail, vous pouvez déménager ou rénover en toute sérénité.
     </p>
   </section>
 
   <!-- SECTION SERVICES -->
   <section id="services" class="section section-alt container">
     <h2>Nos Services</h2>
-    <ul>
-      <li><strong>Rénovation intérieure & extérieure</strong> : murs, sols, peintures…</li>
-      <li><strong>Déménagement professionnel</strong> : transport sécurisé, emballage soigné…</li>
-      <li><strong>Nettoyage après chantier</strong> : remise en état impeccable.</li>
-      <li><strong>Accompagnement personnalisé</strong> : conseils et devis gratuit.</li>
-    </ul>
-    <p class="tagline">Chez MonMaRénov, nous mettons le cœur dans chaque mission.</p>
+    <div class="services-grid">
+      <div class="service">
+        <img src="images/camion-demenagement.jpg" alt="Camion de déménagement MonMaRénov">
+        <h3>Déménagement professionnel</h3>
+        <p>Transport sécurisé, emballage soigné et manutention experte pour un déménagement sans stress.</p>
+      </div>
+      <div class="service">
+        <img src="images/location-chauffeur.jpg" alt="Location de camion avec chauffeur">
+        <h3>Location de camion</h3>
+        <p>Camion équipé et chauffeur professionnel pour toutes vos livraisons et transports.</p>
+      </div>
+      <div class="service">
+        <img src="images/stockage.jpg" alt="Garde-meubles sécurisé">
+        <h3>Garde-meubles sécurisé</h3>
+        <p>Stockage de courte ou longue durée avec surveillance et accès facile.</p>
+      </div>
+      <div class="service">
+        <img src="images/nettoyage.jpg" alt="Nettoyage après chantier">
+        <h3>Nettoyage après chantier</h3>
+        <p>Remise en état complète de vos locaux ou de votre logement.</p>
+      </div>
+    </div>
+    <p class="tagline">
+      Chez MonMaRénov, chaque mission est réalisée avec professionnalisme et bienveillance.
+    </p>
   </section>
 
-  <!-- SECTION CONTACT (intégrée ici) -->
+  <!-- SECTION CONTACT DIRECT (facultative) -->
   <section id="contact" class="section container">
     <h2>Contactez-nous</h2>
-    <p>Pour un devis gratuit ou toute question, écrivez-nous ou appelez-nous :</p>
-    <p><strong>Email :</strong> <a href="mailto:contact@monmarenov.fr">contact@monmarenov.fr</a><br>
-       <strong>Tél :</strong> 06 01 02 03 04</p>
-    <!-- Si tu veux un vrai formulaire, on peut l'intégrer avec Formspree -->
+    <p>
+      Pour un devis gratuit ou toute question, écrivez-nous ou appelez-nous :  
+      <strong>Email :</strong> <a href="mailto:contact@monmarenov.fr">contact@monmarenov.fr</a>  
+      <strong>Tél :</strong> 06 01 02 03 04
+    </p>
   </section>
 
   <!-- FOOTER -->
@@ -136,46 +90,4 @@
 
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MonMaRénov – Contact</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <header class="site-header">
-    <nav class="main-nav container">
-  <a href="index.html">Accueil</a>
-  <a href="services.html">Services</a>
-  <a href="about.html">À propos</a>
-  <a href="testimonials.html">Témoignages</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html">Contact</a>
-</nav>
-      <a href="index.html">Accueil</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
-
-  <section class="section container">
-    <h2>Contactez MonMaRénov</h2>
-    <form action="https://formspree.io/f/TON_CODE" method="POST">
-      <label>Nom :<input type="text" name="name" required></label>
-      <label>Email :<input type="email" name="email" required></label>
-      <label>Message :<textarea name="message" rows="4" required></textarea></label>
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
-
-  <footer class="footer container">
-    <p>&copy; 2025 MonMaRénov — contact@monmarenov.fr</p>
-  </footer>
-
-</body>
-</html>
-  
 Replace index.html with modern banner and refined sections
