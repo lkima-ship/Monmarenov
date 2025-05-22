@@ -15,23 +15,23 @@ body {
 
 /* Conteneur centré */
 .container {
-  width: 90%;
-  max-width: 1000px;
+  width: 70%;
+  max-width:  150px;
   margin: auto;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 /* BANNIÈRE */
 .banner {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 80vh;
   overflow: hidden;
 }
 .banner-images img {
   position: absolute;
   top: 0; left: 0;
-  width: 100%;
+  width: 60%;
   height: 80vh;
   object-fit: cover;
 }
