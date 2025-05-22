@@ -127,4 +127,22 @@ img {
   background-color: #f2f2f2;
   color: #666;
 }
+.photos {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.photos h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.photos img {
+  max-width: 90%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 Update stylesheet link href to point to style.css at root
