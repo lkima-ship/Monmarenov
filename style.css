@@ -93,4 +93,5 @@ body {
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
+  Update stylesheet link href to point to style.css at root
 }
