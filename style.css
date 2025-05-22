@@ -1,259 +1,86 @@
-/* Reset rapide */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* Typographie & fond */
+/* Base */
 body {
   font-family: Arial, sans-serif;
+  font-size: 18px;
   color: #333;
   background: #fafafa;
   line-height: 1.6;
 }
 
-/* Conteneur centré */
-.container {
-  width: 70%; 
-  max-width:  60px;
-  margin: auto;
-  padding: 20px 0;
-}
-
-/* BANNIÈRE */
-.banner {
-  position: relative;
-  width: 60%;
-  height: 50vh;
-  overflow: hidden;
-}
-.banner-images img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 70%;
-  height: 60vh ;
-  object-fit: cover;
-}
-.banner-overlay {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  color: white;
-  background: rgba(0,0,0,0.4);
-  padding: 20px 40px;
-  border-radius: 8px;
-}
-.banner-overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-.banner-overlay p {
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
-
-/* SECTIONS */
-.section {
-  background: white;
-  text-align: center;
-}
-.section-alt {
-  background: #f0f0f0;
-}
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-.section p,
-.section ul {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-.section ul {
-  list-style: none;
-  padding: 0;
-}
-.section ul li {
-  margin: 10px 0;
-  text-align: left;
-}
-.tagline {
-  font-style: italic;
-  color: #555;
-}
-
-/* FOOTER */
-.footer {
-  background: #222;
-  color: #ddd;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 0.9rem;
-}
-.footer a {
-  color: #ddd;
-  text-decoration: none;
-}
-/* Grille des services */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.service {
-  background: white;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.service img {
-  max-width: 80%;      /* limite l'image à 80% de la largeur du conteneur */
-  height: auto;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-}
-
-.service h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.service p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Ajustement tagline */
-.tagline {
-  text-align: center;
-  font-style: italic;
-  color: #666;
-  margin-top: 2rem;
-}
-/* Grille des services */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.service {
-  background: white;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-/* Ajustement des images pour qu’elles ne soient pas trop larges */
-.service img {
-  max-width: 150px;    /* limité à 150px de large */
-  width: 100%;         /* ou “width: 100%” si vous préférez qu’elle remplisse le conteneur jusqu’à 150px */
-  height: auto;
-  margin: 0 auto 1rem; /* centrer et espacer sous l’image */
-  border-radius: 4px;
-}
-
-.service h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.service p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.tagline {
-  text-align: center;
-  font-style: italic;
-  color: #666;
-  margin-top: 2rem;
-}
-/* BASE TYPO */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 18px;       /* Texte général plus grand */
-  line-height: 1.6;
-  color: #333;
-  background: #fafafa;
-  margin: 0;
-  padding: 0;
-}
-
-/* TITRES */
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-h3 {
-  font-size: 1.5rem;
-  margin: 15px 0 10px;
-}
-
-/* BANNIÈRE */
-.banner {
-  position: relative;
-  height: 60vh;
-  overflow: hidden;
-}
-.banner-images img {
-  width: 100%;
-  height: 60vh;
-  object-fit: cover;
-}
-.banner-overlay {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  padding: 20px 40px;
-  text-align: center;
-  border-radius: 8px;
-}
-
-/* SERVICES GRID */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-}
-.service img {
-  max-width: 100px;     /* Limite la largeur à 100px */
-  height: auto;
-  margin: 0 auto 10px;
-  display: block;
-  border-radius: 4px;
-}
-
-/* SECTION & CONTAINERS */
+/* Conteneur */
 .container {
   width: 90%;
   max-width: 1000px;
   margin: auto;
   padding: 40px 0;
 }
-.section {
-  background: #fff;
-  text-align: center;
+
+/* Navigation */
+.site-header { background: #0066cc; }
+.main-nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  justify-content: center;
 }
-.section-alt {
-  background: #f0f0f0;
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main-nav a.active,
+.main-nav a:hover {
+  text-decoration: underline;
 }
 
-/* CONTACT + FOOTER */
+/* Bannière */
+.banner {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+.banner-text {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.banner-text h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+.banner-text p  { font-size: 1.2rem; }
+
+/* Sections */
+.section { text-align: center; background: white; }
+.section-alt { background: #f0f0f0; }
+.section h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+/* Grille services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.service img {
+  max-width: 120px;
+  height: auto;
+  margin: auto 0 1rem;
+  display: block;
+  border-radius: 4px;
+}
+.service h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+.service p  { font-size: 1rem; color: #555; }
+
+/* Contact & Footer */
 .footer {
   background: #222;
   color: #ddd;
@@ -261,5 +88,5 @@ h3 {
   text-align: center;
   font-size: 1rem;
 }
-Réduction de la taille des images dans la grille des services
-Replace style.css with updated 
+.footer a { color: #ddd; text-decoration: none; }
+“Update homepage layout and styles”
