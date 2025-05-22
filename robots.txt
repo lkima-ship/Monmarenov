@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://ikima-ship.github.io/Monmarenov/sitemap.xml
+Add robots.txt to allow all crawlers and reference sitemap.xml
