@@ -137,4 +137,46 @@ body {
   color: #666;
   margin-top: 2rem;
 }
-Replace style.css with updated banner and section styles
+/* Grille des services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.service {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Ajustement des images pour qu’elles ne soient pas trop larges */
+.service img {
+  max-width: 150px;    /* limité à 150px de large */
+  width: 100%;         /* ou “width: 100%” si vous préférez qu’elle remplisse le conteneur jusqu’à 150px */
+  height: auto;
+  margin: 0 auto 1rem; /* centrer et espacer sous l’image */
+  border-radius: 4px;
+}
+
+.service h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 2rem;
+}
+Réduction de la taille des images dans la grille des services
+Replace style.css with updated 
