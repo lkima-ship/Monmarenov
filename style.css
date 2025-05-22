@@ -110,3 +110,18 @@ body {
   font-size: 0.9rem;
 }
 Mise à jour de style.css pour style pro déménagement
+.feature {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+Ajout style pour les images de la section features
