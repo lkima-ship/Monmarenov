@@ -1,218 +1,116 @@
-/* Général */
-body {
+/* Reset rapide */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
 }
 
-/* Conteneur principal */
+/* Typo & fond */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #fafafa;
+  line-height: 1.6;
+}
+
+/* Conteneur centré */
 .container {
   width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 0;
 }
 
-/* Section HERO */
-.hero {
-  background-color: #007BFF;
-  color: #fff;
+/* BANNIÈRE */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.banner-images img:nth-child(2){opacity:1}{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.banner-images img:nth-child(2) {
+  opacity: 0; /* on verra juste une image, la 1ère */
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
   text-align: center;
-  padding: 60px 20px;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  padding: 20px 40px;
+  border-radius: 8px;
 }
 
-.hero h2 {
-  font-size: 2.2em;
-  margin-bottom: 0.5em;
+.banner-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 1em;
+.banner-overlay p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
-/* Bouton */
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #fff;
-  color: #007BFF;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background-color: #e6e6e6;
-}
-
-/* Section de fonctionnalités ou d’images */
-.feature {
-  padding: 30px 15px;
+/* SECTIONS */
+.section {
+  background: white;
   text-align: center;
 }
 
-.feature img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
+.section-alt {
+  background: #f0f0f0;
 }
 
-.feature h3 {
-  font-size: 1.6em;
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section p,
+.section ul {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.section ul {
+  list-style: none;
+}
+
+.section ul li {
   margin: 10px 0;
+  text-align: left;
 }
 
-.feature p {
-  font-size: 1.1em;
-}
-
-/* Pied de page */
-.site-footer {
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
+.section .tagline {
+  font-style: italic;
   color: #555;
 }
-/* Appliquer une taille de base lisible au texte */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 18px;        /* Augmente la taille de base du texte */
-  line-height: 1.6;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
 
-/* Rendre les images responsives */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-}
-
-/* Section hero (haut de page) */
-.hero {
-  background-color: #007BFF;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.hero h2 {
-  font-size: 2.5em;     /* Titre plus grand */
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1.3em;     /* Texte plus lisible */
-  margin-bottom: 20px;
-}
-
-.btn {
-  font-size: 1.1em;
-  padding: 12px 24px;
-}
-
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 1em;
-  background-color: #f2f2f2;
-  color: #666;
-}
-.photos {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-}
-
-.photos h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.photos img {
-  max-width: 90%;
-  height: auto;
-  margin: 10px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f8f8;
-  color: #222;
-  line-height: 1.6;
-}
-
-.banniere {
-  background-image: url('images/photo1.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  text-align: center;
-  color: white;
-  width: 100%;
-}
-
-.overlay h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.overlay p {
-  font-size: 20px;
-}
-
-.presentation {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
-
-.presentation h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.photos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  gap: 20px;
-}
-
-.photos img {
-  width: 45%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
+/* FOOTER */
+.footer {
   background: #222;
-  color: white;
+  color: #ddd;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
 }
 Update stylesheet link href to point to style.css at root
