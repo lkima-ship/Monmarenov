@@ -145,4 +145,74 @@ img {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+.banniere {
+  background-image: url('images/photo1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 20px;
+}
+
+.presentation {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.presentation h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.photos img {
+  width: 45%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
 Update stylesheet link href to point to style.css at root
