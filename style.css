@@ -95,8 +95,8 @@ body {
   height: auto;
 }
 .feature img {
-  width: 100%;
-  height: 200px;      /* même hauteur pour toutes vos miniatures */
+  width: 10%;
+  height: 20px;      /* même hauteur pour toutes vos miniatures *
   object-fit: cover;  /* recadrage automatique pour garder l’aspect */
   border-radius: 4px;
   margin-bottom: 0.5rem;
