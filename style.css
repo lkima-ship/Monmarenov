@@ -95,10 +95,11 @@ body {
   height: auto;
 }
 .feature img {
-  width: 10%;
-  height: 20px;      /* même hauteur pour toutes vos miniatures *
-  object-fit: cover;  /* recadrage automatique pour garder l’aspect */
+  max-width: 100%;
+  height: auto;
   border-radius: 4px;
   margin-bottom: 0.5rem;
+}
+
 }
  Ajout de la bannière photo3 sur la page services
