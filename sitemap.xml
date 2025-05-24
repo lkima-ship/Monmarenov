@@ -15,3 +15,8 @@
   </url>
   <!-- Ajoutez ici toutes vos pages -->
 </urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://lkima-ship.github.io/Monmarenov/</loc></url>
+  <url><loc>https://lkima-ship.github.io/Monmarenov/apropos.html</loc></url>
+  <!-- … autres pages … -->
+</urlset>
