@@ -1,177 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="MonMaRénov – Déménagement, location de camion, nettoyage et garde-meubles en Île-de-France.">
-  <title>MonMaRénov – Services & Déménagement</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MonMaRénov – Votre partenaire en Île-de-France</title>
   <style>
     /* Reset et typographie */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    * { box-sizing:border-box; margin:0; padding:0 }
+    body { font-family:Arial,sans-serif; background:#f9f9f9; color:#333; line-height:1.6 }
 
-    /* En-tête */
-    header { background: #005a87; color: #fff; padding: 20px; text-align: center; }
-    header p { margin-top: 8px; font-size: 1.1em; }
+    /* Header & nav */
+    header { background:#005a87; color:#fff; padding:20px; text-align:center }
+    nav { background:#00456a }
+    nav ul { display:flex; flex-wrap:wrap; justify-content:center; list-style:none }
+    nav a { display:block; padding:12px 18px; color:#fff; text-decoration:none }
+    nav a:hover { background:#003a56 }
 
-    /* Navigation */
-    nav { background: #00456a; }
-    nav ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; }
-    nav li { margin: 0 10px; }
-    nav a { display: block; padding: 12px 18px; color: #fff; text-decoration: none; }
-    nav a:hover { background: #003a56; }
-
-    /* Sections */
-    section { background: #fff; max-width: 1000px; margin: 20px auto; padding: 30px 20px; border-radius: 6px; }
-    h2 { color: #005a87; margin-bottom: 15px; }
-    h3 { margin-top: 20px; color: #005a87; }
-    p { margin-bottom: 15px; }
+    /* Sections génériques */
+    section { background:#fff; max-width:1000px; margin:20px auto; padding:30px 20px; border-radius:6px }
+    h2 { color:#005a87; margin-bottom:15px }
+    p { margin-bottom:15px }
 
     /* Images */
-    .section-img { margin: 15px 0; text-align: center; }
-    .section-img img { max-width: 100%; height: auto; border-radius: 6px; }
+    .section-img { text-align:center; margin:15px 0 }
+    .section-img img { max-width:100%; border-radius:6px }
 
-    /* Bouton */
-    .btn-service { display: inline-block; background: #005a87; color: #fff; padding: 12px 24px;
-                   border-radius: 4px; text-decoration: none; box-shadow: 1px 1px 4px rgba(0,0,0,0.2); }
-    .btn-service:hover { background: #00456a; }
+    /* Service grid */
+    #services .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px }
+    #services .card { background:#fff; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1); text-align:center }
+    #services .card img { width:100%; height:180px; object-fit:cover; border-top-left-radius:6px; border-top-right-radius:6px }
+    #services .card h3 { margin:15px 0 10px; color:#005a87 }
+    #services .card p { padding:0 15px 20px }
+
+    /* Gallery */
+    #gallery .galerie { display:flex; flex-wrap:wrap; gap:15px; justify-content:center }
+    #gallery .galerie img { max-width:300px; border:2px solid #ccc; border-radius:4px }
+
+    /* Avis clients */
+    #reviews blockquote { margin:15px auto; padding:10px 20px; background:#eef; border-left:5px solid #005a87; max-width:800px }
+
+    /* Map */
+    #localisation .map-container { max-width:1000px; margin:20px auto }
+    #localisation iframe { width:100%; height:300px; border:0; border-radius:6px }
 
     /* Formulaire */
-    .contact-form { max-width: 600px; margin: 20px auto; }
-    .contact-form label { display: block; margin-bottom: 6px; font-weight: bold; }
-    .contact-form input,
-    .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
-    .contact-form button { background: #005a87; color: #fff; padding: 12px; border: none; border-radius: 4px; cursor: pointer; }
-    .contact-form button:hover { background: #00456a; }
+    .contact-form { max-width:600px; margin:20px auto; background:#fff; padding:20px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1) }
+    .contact-form label { display:block; font-weight:bold; margin-bottom:6px }
+    .contact-form input, .contact-form textarea { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px }
+    .contact-form button { width:100%; padding:12px; background:#005a87; color:#fff; border:none; border-radius:4px; cursor:pointer }
+    .contact-form button:hover { background:#00456a }
 
-    /* Pied de page */
-    footer { background: #222; color: #fff; text-align: center; padding: 15px; font-size: 0.9em; }
+    /* Footer */
+    footer { text-align:center; padding:15px; background:#222; color:#ccc; font-size:0.9em; margin-top:20px }
   </style>
 </head>
 <body>
 
+  <!-- Header & nav -->
   <header>
     <h1>MonMaRénov</h1>
     <p>Rénovation, Déménagement & Services en Île-de-France</p>
   </header>
-
   <nav>
     <ul>
       <li><a href="#accueil">Accueil</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#gallery">Galerie</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#reviews">Avis Clients</a></li>
+      <li><a href="#localisation">Localisation</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- ACCUEIL -->
+  <!-- Accueil -->
   <section id="accueil">
     <h2>Bienvenue</h2>
-    <p>Chez <strong>MonMaRénov</strong>, nous vous accompagnons avec sérieux, humanité et efficacité dans tous vos projets de déménagement, transport, nettoyage ou stockage.</p>
+    <p>Chez <strong>MonMaRénov</strong>, nous accompagnons vos projets avec sérieux, professionnalisme et bienveillance. Votre satisfaction est notre priorité.</p>
     <div class="section-img">
-      <img src="images/photo3.jpg" alt="Équipe MonMaRénov au travail">
+      <img src="images/photo1.jpg" alt="Équipe MonMaRénov au travail">
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- Services -->
   <section id="services">
     <h2>Nos Services</h2>
-
-    <h3>Déménagement</h3>
-    <p>Emballage, manutention et transport en toute sécurité pour un déménagement sans stress.</p>
-    <div class="section-img">
-      <img src="images/camion-demenagement.jpg" alt="Camion de déménagement">
-    </div>
-
-    <h3>Location de Camion avec Chauffeur</h3>
-    <p>Des camions adaptés à vos besoins, conduits par des professionnels expérimentés.</p>
-    <div class="section-img">
-      <img src="images/location-chauffeur.jpg" alt="Location de camion avec chauffeur">
-    </div>
-
-    <h3>Garde-Meubles</h3>
-    <p>Stockage propre, sécurisé et accessible selon vos besoins, en courte ou longue durée.</p>
-    <div class="section-img">
-      <img src="images/stockage.jpg" alt="Espace de stockage sécurisé">
-    </div>
-
-    <h3>Nettoyage Après Travaux</h3>
-    <p>Remise en état complète de votre logement ou local après chantier ou déménagement.</p>
-    <div class="section-img">
-      <img src="images/photo2.jpg" alt="Nettoyage professionnel après travaux">
-    </div>
-
-    <div style="text-align:center; margin-top:20px;">
-      <a href="#contact" class="btn-service">Demander un service</a>
+    <div class="grid">
+      <div class="card">
+        <img src="images/camion-demenagement.jpg" alt="Déménagement professionnel">
+        <h3>Déménagement</h3>
+        <p>Emballage, transport et installation : un service complet clé en main.</p>
+      </div>
+      <div class="card">
+        <img src="images/location-chauffeur.jpg" alt="Location de camion">
+        <h3>Location Camion</h3>
+        <p>Camions avec chauffeur adaptés à vos besoins, à l’heure ou à la journée.</p>
+      </div>
+      <div class="card">
+        <img src="images/stockage.jpg" alt="Garde-meubles sécurisé">
+        <h3>Garde-meubles</h3>
+        <p>Espaces sécurisés, propres et accessibles 24/7 pour vos biens.</p>
+      </div>
+      <div class="card">
+        <img src="images/photo2.jpg" alt="Nettoyage professionnel">
+        <h3>Nettoyage</h3>
+        <p>Remise en état complète de vos locaux après travaux ou déménagement.</p>
+      </div>
     </div>
   </section>
 
-  <!-- GALERIE -->
+  <!-- Galerie -->
   <section id="gallery">
     <h2>Galerie</h2>
-    <div class="section-img">
-      <img src="images/photo3.jpg" alt="Déménagement en cours">
-      <img src="images/photo2.jpg" alt="Camion en action">
-      <img src="images/camion-demenegement.jpg" alt="Équipe au travail">
+    <div class="galerie">
+      <img src="images/photo3.jpg" alt="Projet 1">
+      <img src="images/Moving truck.jpg" alt="Camion en action">
+      <img src="images/Moving truck 2.jpg" alt="Équipe au travail">
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq">
-    <h2>FAQ – Questions fréquentes</h2>
-
-    <h4>Quels sont vos délais d’intervention ?</h4>
-    <p>En moyenne sous 48 h, selon votre zone et nos disponibilités.</p>
-
-    <h4>Comment demander un devis ?</h4>
-    <p>Appelez-nous ou envoyez-nous un message, réponse sous 24 h avec un devis détaillé.</p>
-
-    <h4>Vos services sont-ils assurés ?</h4>
-    <p>Oui, tous nos services sont couvert par une assurance pour votre tranquillité d’esprit.</p>
+  <!-- Avis Clients -->
+  <section id="reviews">
+    <h2>Avis Clients</h2>
+    <blockquote>"Travail soigné et rapide, je recommande ! – Marie T."</blockquote>
+    <blockquote>"Une équipe à l’écoute, très professionnelle. – Jean P."</blockquote>
+    <blockquote>"Excellente expérience, très satisfait du résultat. – Amina R."</blockquote>
   </section>
 
-  <!-- CONTACT -->
+  <!-- Localisation -->
+  <section id="localisation">
+    <h2>Nous Localiser</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9991235272824!2d2.2922926156746493!3d48.8588440792878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890abcdef!2sVotre%20Adresse!5e0!3m2!1sfr!2sfr!4v1618302841890!5m2!1sfr!2sfr"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section id="contact">
-  <h2>Contactez-nous</h2>
-  <p><strong>Téléphone :</strong> 06 06 98 84 17</p>
-  <p><strong>Email :</strong> <a href="mailto:superside@outlook.fr">superside@outlook.fr</a></p>
-  <p>Ou utilisez le formulaire ci-dessous pour un <strong>devis gratuit</strong> personnalisé.</p>
-
-  <form action="https://formspree.io/f/xgvkjewr" method="POST">
-    <label for="name">Nom :</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="email">Email :</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">Message :</label><br>
-    <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
+    <h2>Contactez-nous</h2>
+    <form class="contact-form" action="https://formspree.io/f/xgvkjewr" method="POST">
+      <label for="name">Nom et prénom</label>
+      <input type="text" id="name" name="name" required>
 
       <label for="email">Adresse email</label>
-      <input type="email" id="email" name="_replyto" required>
+      <input type="email" id="email" name="email" required>
 
       <label for="message">Votre message</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
       <button type="submit">Envoyer</button>
     </form>
-    <p style="text-align:center; margin-top:10px;">
+    <p style="text-align:center;">
       <strong>Téléphone :</strong> 06 06 98 84 17<br>
       <strong>Email :</strong> <a href="mailto:superside@outlook.fr">superside@outlook.fr</a>
     </p>
   </section>
 
+  <!-- Footer -->
   <footer>
-  
     &copy; 2025 MonMaRénov – Tous droits réservés.
   </footer>
 
 </body>
-  mise au poin
 </html>
-mise a jour softwer
