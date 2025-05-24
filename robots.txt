@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ikima-ship.github.io/Monmarenov/sitemap.xml
+Sitemap: https://https://lkima-ship.github.io/Monmarenov//sitemap.xml
 
