@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ikima-ship.github.io/Monmarenov/</loc></url>
-  <url><loc>https://ikima-ship.github.io/Monmarenov/services.html</loc></url>
-  <url><loc>https://ikima-ship.github.io/Monmarenov/contact.html</loc></url>
+<urlset 
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://lkima-ship.github.io/Monmarenov/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://lkima-ship.github.io/Monmarenov/services.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lkima-ship.github.io/Monmarenov/galerie.html</loc>
+    <priority>0.64</priority>
+  </url>
+  <!-- Ajoutez ici toutes vos pages -->
 </urlset>
-Add sitemap.xml listing site URLs for Google indexing
-Add robots.txt and sitemap.xml
