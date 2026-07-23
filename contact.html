@@ -2,52 +2,38 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact – Monmarenov Déménagement</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - MonMaRenov</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+    .navbar { background: #005a87; padding: 15px; text-align: center; }
+    .navbar a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    .container { padding: 60px 20px; max-width: 800px; margin: 0 auto; text-align: center; }
+    .contact-box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .contact-box h2 { color: #005!87; }
+    .cta-btn { background: #00aaff; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; }
+  </style>
 </head>
 <body>
+  <nav class="navbar">
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Monmarenov Déménagement</h1>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
+  <main class="container">
+    <h1>Demander un devis gratuit</h1>
+    <div class="contact-box">
+      <h2>Prêt à transformer votre habitat ?</h2>
+      <p>�� Secteur 93 & IDF</p>
+      <p>✉️ mside243@gmail.com</p>
+      <a href="tel:0606988417" class="cta-btn">📞 06 06 98 84 17</a>
     </div>
-  </header>
+  </main>
 
-  <section class="container">
-    <h2>Contactez-nous</h2>
-    <p>Vous avez un projet de déménagement ? Remplissez le formulaire ci-dessous ou contactez-nous directement :</p>
-
-    <form action="https://formspree.io/f/TON_CODE" method="POST">
-      <label for="name">Nom :</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Votre message :</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit" class="btn">Envoyer</button>
-    </form>
-
-    <p>Email : <a href="mailto:superside@outlook.fr">superside@outlook.fr</a><br>
-    Téléphone : 06 06 98 84 17</p>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Monmarenov Déménagement – <a href="mailto:superside@outlook.fr">superside@outlook.fr</a></p>
-    </div>
+  <footer style="background:#333; color:#ccc; padding:40px 20px; text-align:center; margin-top: 50px;">
+    <p>© 2026 MonMaRenov - Propulsé par Saidi Web</p>
   </footer>
-
 </body>
 </html>
-« Uniformisation header/footer sur contact.html »
